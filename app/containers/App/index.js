@@ -12,6 +12,13 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
+import Insert from 'containers/Insert/Loadable';
+import Update from 'containers/Update/Loadable';
+import Delete from 'containers/Delete/Loadable';
+import ClassifySingle from 'containers/ClassifySingle/Loadable';
+import BatchClassifySingle from 'containers/BatchClassifySingle/Loadable';
+import SubmitIndex from 'containers/SubmitIndex/Loadable';
+import Johannes from 'containers/Johannes/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
@@ -38,7 +45,14 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
+        <Route path="/Johannes" component={Johannes} />
+        <Route path="/Features" component={FeaturePage} />
+        <Route path="/SubmitIndex" component={SubmitIndex} />
+        <Route path="/ClassifySingle" component={ClassifySingle} />
+        <Route path="/BatchClassifySingle" component={BatchClassifySingle} />
+        <Route path="/Insert" component={Insert} />
+        <Route path="/Update" component={Update} />
+        <Route path="/Delete" component={Delete} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />

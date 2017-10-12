@@ -10,8 +10,12 @@ export default defineMessages({
     id: 'boilerplate.components.Header.home',
     defaultMessage: 'Home',
   },
-  features: {
-    id: 'boilerplate.components.Header.features',
-    defaultMessage: 'Features',
+  johannes: {
+    id: 'boilerplate.components.Header.johannes',
+    defaultMessage: 'Johannes',
+  },
+  ocr: {
+    id: 'boilerplate.components.Header.ocr',
+    defaultMessage: 'OCR',
   },
 });
